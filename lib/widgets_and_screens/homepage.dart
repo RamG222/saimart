@@ -56,7 +56,7 @@ class _HomepageState extends State<Homepage> {
                   children: [
                     WebView(
                       navigationDelegate: (NavigationRequest request) {
-                        if (request.url.contains("https://saimart.in/")) {
+                        if (request.url.startsWith("https://saimart.in/")) {
                           return NavigationDecision.navigate;
                         } else {
                           _launchURL(request.url);

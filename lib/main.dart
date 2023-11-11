@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
           navigator: const Homepage(),
           durationInSeconds: 2,
           loadingText: const Text(
-            "Loading",
+            "Welcome back!",
             style: TextStyle(color: Colors.blueGrey),
           ),
           loaderColor: Colors.blue,
