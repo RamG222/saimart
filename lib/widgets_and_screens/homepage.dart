@@ -1,6 +1,8 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:connectivity_plus/connectivity_plus.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:saimart/pushNotificationsAPI_firebase/firebase_notifications_api.dart';
@@ -75,14 +77,13 @@ class _HomepageState extends State<Homepage> {
                           isLoading = true;
                         });
                       },
-
                       onProgress: (progress) {},
-
                       onPageFinished: (finish) {
                         setState(() {
                           isLoading = false;
                         });
                       },
+
                       // ignore: prefer_collection_literals
                     ),
                     isLoading
