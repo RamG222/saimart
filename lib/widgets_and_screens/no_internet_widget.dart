@@ -12,6 +12,7 @@ class NoInternetWidget extends StatelessWidget {
       child: Column(
         children: [
           const SizedBox(height: 70),
+          Image.asset('assets\logo.png'),
           const SizedBox(height: 150),
           const Center(
             child: Text(
